@@ -12,7 +12,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
+  gap: 48px;
 `;
 
 /** Marca do sistema */
@@ -33,5 +33,5 @@ export const Nav = styled.nav`
 export const Actions = styled.div`
   display: flex;
   align-items: center;
-  gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.xsmall}px;
+  gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.huge}px;
 `;

@@ -5,6 +5,7 @@ import type { AppTheme } from '../../styles/theme';
 export const NavList = styled.nav`
   display: flex;
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
+  width: 100%;
   
   /* @media (max-width: 768px) {
     gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
