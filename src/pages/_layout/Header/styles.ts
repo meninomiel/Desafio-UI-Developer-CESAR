@@ -3,7 +3,6 @@ import type { AppTheme } from '../../../styles/theme';
 
 export const Wrapper = styled.header`
   background: ${({ theme }: { theme: AppTheme }) => theme.color.background.default};
-  border-bottom: 1px solid ${({ theme }: { theme: AppTheme }) => theme.color.border.default};
   padding: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px ${({ theme }: { theme: AppTheme }) => theme.spacing.xlarge}px;
 `;
 
@@ -16,17 +15,21 @@ export const Container = styled.div`
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
 `;
 
+/** Marca do sistema */
 export const Brand = styled.div`
   font-size: 1.25rem;
-  font-weight: 600;
-  color: ${({ theme }: { theme: AppTheme }) => theme.color.content.dark};
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: ${({ theme }: { theme: AppTheme }) => theme.color.content.accent};
 `;
 
+/** Navegação principal */
 export const Nav = styled.nav`
   display: flex;
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.small}px;
 `;
 
+/** Ações do usuário (ex: perfil, notificações, etc) */
 export const Actions = styled.div`
   display: flex;
   align-items: center;
