@@ -23,4 +23,5 @@ export const Navigation: React.FC<NavigationProps> = ({
 };
 
 export type { NavigationProps, NavigationItem } from './types';
+export { NavList, NavItem } from './styles'; 
 export default Navigation;

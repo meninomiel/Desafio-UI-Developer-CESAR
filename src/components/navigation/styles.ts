@@ -7,9 +7,9 @@ export const NavList = styled.nav`
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
   width: 100%;
   
-  /* @media (max-width: 768px) {
-    gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.default}px;
-  } */
+ @media (max-width: 580px) {
+    display: none;
+  }
 `;
 
 /** Definições de estilos do links. */

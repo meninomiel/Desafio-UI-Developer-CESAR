@@ -34,4 +34,8 @@ export const Actions = styled.div`
   display: flex;
   align-items: center;
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.huge}px;
+
+  @media (max-width: 580px) {
+    display: none;
+  }
 `;
