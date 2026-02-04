@@ -31,7 +31,6 @@ export const FieldLabel = styled.div`
 export const LabelWrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   gap: 4px;
 `;
 

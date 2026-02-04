@@ -2,6 +2,7 @@
 import React from 'react';
 import { Form, FormRow } from '../_form/styles';
 import { Input } from '../../../components/input';
+import { FileUpload } from '../../../components/file-upload';
 
 export const RegisterForm: React.FC = () => {
   return (
@@ -54,7 +55,15 @@ export const RegisterForm: React.FC = () => {
           optional
         />
       </FormRow>
-      <FormRow />
+      <FormRow>
+        <FileUpload
+          id="resume"
+          label="Upload your resume"
+          helperText="Allowed files: pdf, doc or odt."
+          onFileSelect={(file) => console.log('Selected:', file)}
+          onFileRemove={() => console.log('Removed')}
+        />
+      </FormRow>
     </Form>
   );
 };
