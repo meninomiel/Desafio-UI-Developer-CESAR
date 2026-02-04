@@ -1,0 +1,1 @@
+// Para futura implementação de rotas, caso necessário.
