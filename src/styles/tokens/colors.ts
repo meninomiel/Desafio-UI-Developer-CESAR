@@ -52,7 +52,7 @@ export const color = {
     clear: primitive.white[100],
   },
 
-  /** Cores para planos de fundo. */
+  /** Cores para textos. */
   content: {
     dark: primitive.gray[500],
     default: primitive.gray[400],
