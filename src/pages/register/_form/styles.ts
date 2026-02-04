@@ -9,6 +9,6 @@ export const Form = styled.form`
 
 export const FormRow = styled.div`
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.large}px;
 `;
