@@ -20,12 +20,12 @@ export const RegisterForm: React.FC = () => {
   const { values, handleChange, reset } = useForm<FormData>(INITIAL_VALUES);
   const formRef = useRef<HTMLFormElement>(null);
 
-  console.log('Form values:', values);
-
   const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', values);
+    
     // Validação e envio aqui
+    window.alert('Form submitted successfully!');
+    reset()
   };
 
   const handleReset = () => {
