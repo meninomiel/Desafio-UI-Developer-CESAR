@@ -19,7 +19,4 @@ export interface ButtonProps {
   
   /** Callback onClick */
   onClick?: () => void;
-  
-  /** Full width */
-  fullWidth?: boolean;
 }

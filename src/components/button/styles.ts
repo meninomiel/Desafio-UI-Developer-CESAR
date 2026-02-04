@@ -45,7 +45,6 @@ const secondaryStyles = css`
 
 export const StyledButton = styled.button<{
   variant: ButtonVariant;
-  fullWidth: boolean;
 }>`
   /* Base styles */
   display: inline-flex;
