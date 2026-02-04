@@ -6,7 +6,7 @@ import { Header } from '../Header';
 export const PageShell: React.FC<PageShellProps> = ({
   children,
   header = <Header />,
-  footer,
+  footer = "2022 ACME. All rights reserved.",
 }) => (
   <Shell>
     {header && <HeaderSlot>{header}</HeaderSlot>}

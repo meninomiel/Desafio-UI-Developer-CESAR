@@ -23,4 +23,11 @@ export const HeaderSlot = styled.header`
 
 export const FooterSlot = styled.footer`
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: .75rem;
+  padding: ${({ theme }: { theme: AppTheme }) => theme.spacing.small}px;
+  color: ${({ theme }: { theme: AppTheme }) => theme.color.content.dark};
+  font-weight: 500;
 `;
