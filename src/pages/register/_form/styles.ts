@@ -12,3 +12,9 @@ export const FormRow = styled.div`
   flex-flow: row wrap;
   gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.large}px;
 `;
+
+export const FormActions = styled.div`
+  display: flex;
+  gap: ${({ theme }: { theme: AppTheme }) => theme.spacing.xsmall}px;
+  justify-content: flex-end;
+`;

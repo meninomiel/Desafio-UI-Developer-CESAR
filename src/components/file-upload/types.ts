@@ -18,6 +18,9 @@ export interface FileUploadProps {
   
   /** Callback quando arquivo é removido */
   onFileRemove?: () => void;
+
+  /** Arquivo enviado */
+  file?: File | null;
   
   /** Tipos permitidos */
   acceptedTypes?: string[];

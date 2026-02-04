@@ -62,12 +62,12 @@ export const InputWrapper = styled.div`
 
 export const InputElement = styled.input<{
   variant: InputVariant;
-  state: InputState;
+  $state: InputState;
 }>`
   width: 100%;
   padding: ${({ theme }: { theme: AppTheme }) => theme.spacing.xsmall}px;
-  border: 1px solid ${({ theme, variant, state }: { theme: AppTheme; variant: InputVariant; state: InputState }) =>
-    getBorderColor(theme, variant, state)};
+  border: 1px solid ${({ theme, variant, $state }: { theme: AppTheme; variant: InputVariant; $state: InputState }) =>
+    getBorderColor(theme, variant, $state)};
   border-radius: ${({ theme }: { theme: AppTheme }) => theme.radius.sm}px;
   font-size: .875rem;
   background: ${({ theme }: { theme: AppTheme }) => theme.color.background.default};

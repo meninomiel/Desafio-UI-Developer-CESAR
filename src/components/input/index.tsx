@@ -1,4 +1,3 @@
-import React, { useState, useCallback } from 'react';
 import type { InputState, TextInputProps } from './types';
 import {
   Label,
@@ -24,13 +23,12 @@ export const Input: React.FC<TextInputProps> = ({
   helperText,
   optional = false,
 }) => {
-  const [localValue, setLocalValue] = useState(value);
-  
-  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+ 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
-    setLocalValue(newValue);
+    console.log('Input sending value:', newValue);
     onChange?.(newValue);
-  }, [onChange]);
+  };
 
   const inputVariant = disabled ? 'disabled' : variant;
 
@@ -49,13 +47,13 @@ export const Input: React.FC<TextInputProps> = ({
       <InputElement
         id={id}
         type={type}
-        value={localValue}
+        value={value}
         onChange={handleChange}
         placeholder={placeholder}
         disabled={disabled}
         required={required}
         variant={inputVariant}
-        state={variant as InputState}
+        $state={variant as InputState}
         aria-invalid={variant === 'error'}
         aria-describedby={helperText ? `${id}-helper` : undefined}
       />
